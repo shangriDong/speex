@@ -23,7 +23,6 @@ public class SpeexRecorder implements Runnable {
 
 	public void run() {
 
-		// ���������߳�
 		SpeexEncoder encoder = new SpeexEncoder(this.fileName);
 		Thread encodeThread = new Thread(encoder);
 		encoder.setRecording(true);

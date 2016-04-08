@@ -28,7 +28,7 @@ public class GaussRecorderActivity extends Activity implements OnClickListener {
 	SpeexPlayer splayer = null;
 	public void onClick(View v) {
 		if (v == startButton) {
-			this.setTitle("��ʼ¼���ˣ�");
+			this.setTitle("startButton");
 			fileName =  "/mnt/sdcard/gauss.spx";
 		//	fileName =  "/mnt/sdcard/1324966898504.spx";
 			
@@ -42,11 +42,11 @@ public class GaussRecorderActivity extends Activity implements OnClickListener {
 			}
 			recorderInstance.setRecording(true);
 		} else if (v == stopButton) {
-			this.setTitle("ֹͣ��");
+			this.setTitle("stopButton");
 			recorderInstance.setRecording(false);
 		} else if (v == playButton) {
 			// play here........
-			this.setTitle("��ʼ����");
+			this.setTitle("playButton");
 			fileName =  "/mnt/sdcard/gauss.spx";
 			System.out.println("filename===="+fileName);
 			splayer = new SpeexPlayer(fileName);
@@ -71,8 +71,8 @@ public class GaussRecorderActivity extends Activity implements OnClickListener {
 
 		startButton.setText("Start");
 		stopButton.setText("Stop");
-		playButton.setText("����");
-		exitButon.setText("�˳�");
+		playButton.setText("Play");
+		exitButon.setText("Exit");
 		textView.setText("android ¼����\n(1)��ȡPCM���." + "\n(2)ʹ��speex����");
 
 		startButton.setOnClickListener(this);
