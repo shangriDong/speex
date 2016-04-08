@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
         short b[] = new short[200];
         int size = 8;
 
-        mSpeex = new Speex();
-        mSpeex.init();
+        //mSpeex = new Speex();
+        //mSpeex.init();
 
-        mSpeex.getFrameSize();
-        mSpeex.decode(a, b, size);
+        //mSpeex.getFrameSize();
+        //mSpeex.decode(a, b, size);
         //mSpeex.encode(b, size, a, size);
-        mSpeex.close();
+        //mSpeex.close();
     }
 }

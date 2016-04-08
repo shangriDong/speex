@@ -18,7 +18,7 @@ public class Speex {
 
     public void init() {
         load();
-        open(DEFAULT_COMPRESSION);
+        //open(DEFAULT_COMPRESSION);
     }
 
     private void load() {
@@ -30,9 +30,9 @@ public class Speex {
 
     }
 
-    public native int open(int compression);
+    /*public native int open(int compression);
     public native int getFrameSize();
     public native int decode(byte encoded[], short lin[], int size);
     public native int encode(short lin[], int offset, byte encoded[], int size);
-    public native void close();
+    public native void close();*/
 }
